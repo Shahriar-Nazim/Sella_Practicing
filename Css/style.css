@@ -413,9 +413,10 @@ body {
 }
 
 .rights{
-
+    text-align: center;
     background-color: #4dc47d;
     color: #505050;
-    margin: auto;
-    padding: 10px;
+    padding: 15px;
+    font-size: 24px;
+    letter-spacing: 1px;
 }
