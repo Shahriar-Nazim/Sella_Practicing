@@ -411,3 +411,11 @@ body {
     border-radius: 5px;
     cursor: pointer;
 }
+
+.rights{
+
+    background-color: #4dc47d;
+    color: #505050;
+    margin: auto;
+    padding: 10px;
+}
