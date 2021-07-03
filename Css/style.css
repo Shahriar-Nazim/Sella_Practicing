@@ -76,7 +76,7 @@ clr {
     clear: both;
 }
 
-#about, #project. #team, #contact,
+#about, #project, #team, #contact,
 footer{
     background: #ffffff;
 }
@@ -150,7 +150,7 @@ body {
 
 .navbar-light .navbar-nav .nav-link:hover {
     
-    color: #fff:
+    color: #fff;
 }
 
 
@@ -182,7 +182,7 @@ body {
     height: auto;
     width: auto;
     transform: translateX(-50%), translateY(-50%);
-    baseline-shift: cover;
+    -o-table-baseline: cover;
     box-sizing: border-box;
     overflow: hidden;
     z-index: -1;
@@ -194,7 +194,7 @@ body {
     top: 0;
     bottom: 0;
     left: 0;
-    right: ;
+    right: 0;
     background: rgba(0, 0, 0, 0.7);
     width: 100%;
 }
