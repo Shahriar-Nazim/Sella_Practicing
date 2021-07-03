@@ -1,0 +1,413 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.btn-link:hover {
+    text-decoration: none;
+}
+
+ul,ol {
+    list-style-type: none;
+}
+
+h1,h2,h3,h4,h5,h6,p,a {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arimo';
+}
+
+p {
+    font-weight: 300;
+    color: #757575;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+}
+
+h1,h2,h3,h4 {
+    font-weight: 700;
+}
+
+h1{ 
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 50px;
+}
+h2{
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 40px;
+}
+h3{  
+    font-size: 30px;
+    margin-top: 0;
+    line-height: 32px;
+}
+
+h4{
+    font-size: 18px;
+    color: #505050;
+    line-height: 25px;
+}
+
+li {
+    font-family: 'Arimo', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+img {
+    border: none;
+}
+
+clr {
+    clear: both;
+}
+
+#about, #project. #team, #contact,
+footer{
+    background: #ffffff;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* MAin Menu Css here */
+.navbar{
+    
+    padding-top: 40px;
+}
+
+.navbar .navbar-nav{
+    margin-left: auto;
+}
+
+.navbar .navbar-nav a{
+    
+    margin-right: 20px;
+    color: #fff;
+}
+.navbar-light .navbar-nav .nav-link .active,
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar .navbar-brand{
+    font-weight: normal;
+    font-size: 32px;
+    color: #ffffff;
+}
+.navbar .navbar-brand:hover{
+    
+    color: #fff;
+}
+.navbar ul li{
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: ease-in 0.4s;
+    -webkit-transition: ease-in 0.4s;
+    -moz-transition: ease-in 0.4s;
+    -ms-transition: ease-in 0.4s;
+    -o-transition: ease-in 0.4s;
+}
+
+.navbar ul li:hover{
+    
+    color: white;
+}
+
+.navbar ul li::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: transparent;
+    transition:  width 0.4s ease, background-color 0.4s ease;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+    background: #fff;
+    color: #fff;
+    
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    
+    color: #fff:
+}
+
+
+.menu_fix {
+    position: fixed;
+    background: #4dc47d;
+    -webkit-animation: smooth 1s;
+    animation: smooth 1s;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    padding-top: 10px;
+}
+
+
+#banner{
+    
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 120vh;
+    
+}
+
+#banner video{
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    height: auto;
+    width: auto;
+    transform: translateX(-50%), translateY(-50%);
+    baseline-shift: cover;
+    box-sizing: border-box;
+    overflow: hidden;
+    z-index: -1;
+    transition: 1s;
+}
+
+#banner .overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: ;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+}
+
+#banner h1{
+    color: #fff;
+    font-size: 7vw;
+    line-height: 1.2em;
+}
+
+#banner p{
+    color: rgba(250, 250, 250, 0.7);
+}
+
+#banner .banner-text{
+    z-index: 999;
+}
+
+.banner_btn{
+    
+    margin: 32px 0 0 0;
+    padding:0
+}
+
+.banner_btn a{
+    
+    color: #fff;
+    font-weight: normal;
+    line-height: 45px;
+    perspective: 1000px;
+}
+
+.banner_btn a span{
+    position: relative;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 0.5s;
+    padding: 2px 27px;
+    background: #4dc47d;
+    border-radius: 2px;
+    transition: transform 0.4s;
+    transform-origin: 50% 0;
+    transform-style: preserve-3d;
+}
+
+.banner_btn a span::before{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-bottom: 60px;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    background: #000;
+    border-radius: 2px;
+    padding: 2px 27px;
+    transform: rotateX(-90deg);
+    content: attr(data-hover);
+    transform-origin: 50% 0;
+    transition: background 0.4s;
+}
+
+
+.banner_btn a:hover span{
+    transform: rotateX(90deg) translateY(-22px);
+    
+}
+
+.banner_btn a:focus span{
+    transform: rotateX(90deg) translateY(-22px);
+    
+}
+
+
+#about{
+    position: relative;
+}
+
+#about h3{
+    font-size: 24px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    
+}
+
+#about h1{
+    
+    color: #444;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 26px;
+    
+}
+
+
+#project .project_item{
+    position: relative;
+    text-align: center;
+    margin-bottom: 25px;
+    padding: 0;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.project_item .project_img .project_overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: all ease-in-out 0.5s;
+    z-index: 90;
+    
+}
+
+.project_item .project_img:hover .project_overlay{
+    
+    opacity: 1;
+}
+
+
+#project .project_overlay .project_info{
+    padding: 11em 0;
+}
+
+.project_info h1 {
+    color: #fff;
+    margin: 0;
+}
+
+.project_info h3 {
+    color: #d9d9d9;
+    margin-top: 0;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    
+}
+
+.project_item img{
+    
+    transition: all ease-in-out 0.5s;
+}
+
+.project_item:hover img{
+    
+    transform: scale(1.2);
+}
+
+#team{
+    
+    width: 100%;
+}
+.team_slider{
+    
+    width: 25%;
+    display: inline-block;
+}
+
+
+#team .team_slider img{
+    width: 100%;
+    padding-left: 25px;
+}
+
+
+
+#contact{
+    
+    background: url(../Images/contact-bg.jpg) 50% 0 repeat-y fixed;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#contact .form-control{
+    margin-bottom: 40px;
+    border: none;
+    box-shadow: none;
+}
+
+#contact .form-group01{
+    
+    float: left;
+}
+
+#contact input{
+    
+    height: 55px;
+    line-height: 45px;
+}
+
+#contact .form-control:focus{
+    border-color: #d9d9d9;
+}
+
+
+.back_to_top i {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    font-size: 20px;
+    background: #4dc47d;
+    right: 30px;
+    bottom: 20px;
+    z-index: 999;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
